@@ -1,3 +1,4 @@
+#' @export
 plot_stackbar <- function(df, xvalues, yvalue, group){
   
   p = ggplot(df, aes_string(x = xvalues, y = yvalue, fill = group)) 
@@ -11,6 +12,7 @@ plot_stackbar <- function(df, xvalues, yvalue, group){
   return (p)
 }
 
+#' @export
 plot_stackbarh <- function(df, xvalues, yvalue, group){
   
   p = ggplot(df, aes_string(x = xvalues, y = yvalue, fill = group)) 
@@ -39,7 +41,7 @@ plot_stackbarh <- function(df, xvalues, yvalue, group){
 #   #Comment below if want to have a static plot
 #   return (p)
 # }
-
+#' @export
 plotly_donut<- function(df, xvalue, yvalue, hole, ...){
   p <- df %>%
     plot_ly(labels = df[[xvalue]], values = df[[yvalue]]) %>%
