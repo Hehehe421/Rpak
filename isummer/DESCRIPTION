@@ -2,8 +2,8 @@ Package: isummer
 Title: An implementation of ggplot2 and plotly (one line, title case)
 Version: 0.0.0.9000
 Authors@R: person("Sixuan", "He", email = "sixuanhe421@gmail.com", role = c("aut", "cre"))
-Description: Help to simplify the plot processing (one paragraph)
-Imports: bit64,
+Description: Help to simplify the plot processing (one paragraph).
+         bit64,
          data.table,
          dplyr,
          DT,
